@@ -1,0 +1,90 @@
+/* 主题切换按钮样式 */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.theme-toggle:hover {
+  background-color: var(--hover-bg-color);
+  transform: scale(1.05);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+/* 图标动画 */
+.theme-toggle .anticon {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .anticon {
+  transform: rotate(15deg);
+}
+
+/* 明亮模式样式 */
+.light-theme .theme-toggle {
+  color: #1890ff;
+}
+
+.light-theme .theme-toggle:hover {
+  background-color: #f0f8ff;
+  color: #0050b3;
+}
+
+/* 暗黑模式样式 */
+.dark-theme .theme-toggle {
+  color: #ffd700;
+}
+
+.dark-theme .theme-toggle:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: #ffec3d;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .theme-toggle {
+    padding: 4px 8px;
+  }
+  
+  .theme-toggle span:last-child {
+    display: none; /* 在小屏幕上隐藏文字，只显示图标 */
+  }
+}
+
+/* 无障碍支持 */
+.theme-toggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+  .theme-toggle {
+    border: 1px solid currentColor;
+  }
+}
+
+/* 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle,
+  .theme-toggle .anticon {
+    transition: none;
+  }
+  
+  .theme-toggle:hover {
+    transform: none;
+  }
+  
+  .theme-toggle:active {
+    transform: none;
+  }
+  
+  .theme-toggle:hover .anticon {
+    transform: none;
+  }
+}

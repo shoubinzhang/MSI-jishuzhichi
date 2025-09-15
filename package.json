@@ -1,0 +1,34 @@
+{
+  "name": "hospital-login-system",
+  "version": "1.0.0",
+  "description": "登录工具 - 医院产品批号验证系统",
+  "main": "index.js",
+  "scripts": {
+    "client:dev": "cd client && npm run dev",
+    "server:dev": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build": "npm run build:server && npm run build:client",
+    "start": "cd server && npm run start",
+    "setup": "npm install && cd client && npm install && cd ../server && npm install",
+    "build:production": "node build-production.js",
+    "deploy": "node deploy.js",
+    "deploy:check": "node deploy.js --check-only"
+  },
+  "keywords": [
+    "hospital",
+    "login",
+    "coze",
+    "authentication"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "qrcode": "^1.5.4"
+  }
+}

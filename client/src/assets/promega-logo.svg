@@ -1,0 +1,12 @@
+<svg width="250" height="80" viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- 黄色背景圆角矩形 -->
+  <rect x="0" y="0" width="250" height="80" rx="10" fill="#FFA500" />
+  
+  <!-- Promega文字 -->
+  <text x="125" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#333" text-anchor="middle">
+    Promega
+  </text>
+  <text x="125" y="58" font-family="Arial, sans-serif" font-size="12" fill="#666" opacity="0.9" text-anchor="middle">
+    MSI技术支持系统
+  </text>
+</svg>
