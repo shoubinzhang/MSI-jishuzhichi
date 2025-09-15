@@ -1,6 +1,6 @@
 [build]
 builder = "nixpacks"
-buildCommand = "npm run build"
+buildCommand = "npm install && npm run build"
 
 [deploy]
 startCommand = "npm start"
@@ -11,5 +11,5 @@ restartPolicyMaxRetries = 10
 NODE_ENV = "production"
 PORT = "3000"
 
-# Railway 会自动检测 Node.js 项目
-# 确保 package.json 中有正确的 scripts
+# Railway 配置说明
+# 确保在 Railway 项目设置中将 Root Directory 设置为 "server"
