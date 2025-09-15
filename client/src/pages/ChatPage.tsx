@@ -6,7 +6,6 @@ import Loading from '../components/Loading';
 import { ErrorDisplay } from '../components/ErrorBoundary';
 import { MessageSkeleton, UserInfoSkeleton } from '../components/Skeleton';
 import { useErrorHandler } from '../hooks/useErrorHandler';
-import ThemeToggle from '../components/ThemeToggle';
 import { MenuBar } from '../components/MenuBar';
 
 interface Message {

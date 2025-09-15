@@ -1,11 +1,10 @@
-import { useState, FormEvent, useEffect } from 'react';
+import { useState, FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { authApi } from '../api';
 import promegaLogo from '../assets/promega-logo.svg';
 import ThemeToggle from '../components/ThemeToggle';
 import QRCodeGenerator from '../components/QRCodeGenerator';
-import { getServerURL } from '../utils/networkUtils';
 
 const LoginPage = () => {
   const [hospitalName, setHospitalName] = useState('');
